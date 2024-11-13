@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a2f5b;
+    color: white;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #e84c3d;
+    padding: 25px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 400px;
+    background-color:#2a2f5b;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+
+/* Icon Section */
+.icon-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    gap: 40px;
+    
+}
+
+.icon-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Coloca el icono encima del texto */
+    color: white;
+    background-color: #d84332; /* Fondo de cada cajita */
+    padding: 20px; /* Espacio interno en la cajita */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 200px; /* Aumenta el ancho de cada cajita */
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+.icon-section a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Hace que el enlace ocupe todo el ancho del contenedor */
+}
+
+.icon-section i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+
