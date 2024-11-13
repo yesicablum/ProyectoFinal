@@ -9,36 +9,46 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #2a2f5b;
+    background-color: #333;
     color: white;
 }
 
 /* Header */
-header {
-    width: 100%;
-    background-color: #e84c3d;
-    padding: 25px 0;
-    text-align: center;
-}
-
-nav {
+.header {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #f0b208;
+    color: #fff;
+  
+  }
+  
+  .logo {
+    font-size: 24px;
     font-weight: bold;
+  }
+  
+  
+  .nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
     font-size: 20px;
-}
+    font-size: 20px;
+
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
 
 /* Hero Section */
 .hero {
     width: 100%;
-    height: 400px;
-    background-color:#2a2f5b;
+    height: 300px;
+    background-color:#333;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -50,6 +60,7 @@ nav a {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 
@@ -68,7 +79,7 @@ nav a {
     align-items: center;
     flex-direction: column; /* Coloca el icono encima del texto */
     color: white;
-    background-color: #d84332; /* Fondo de cada cajita */
+    background-color: #f0b208; /* Fondo de cada cajita */
     padding: 20px; /* Espacio interno en la cajita */
     border-radius: 8px; /* Bordes redondeados */
     width: 200px; /* Aumenta el ancho de cada cajita */
