@@ -19,9 +19,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
+    width: 100%;
     background-color: #f0b208;
     color: #fff;
+  
   }
   
   .logo {
@@ -29,17 +31,32 @@
     font-weight: bold;
   }
   
+  
   .nav a {
     margin-left: 20px;
     color: #fff;
     text-decoration: none;
     font-size: 20px;
+    font-size: 20px;
+
   }
   
   .nav a:hover {
     text-decoration: underline;
   }
-  
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 300px;
+    background-color:#333;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
   /* Cuerpo */
   .main-content {
     display: flex;
@@ -98,7 +115,7 @@
     margin-bottom: 90px;
   }
   .page h1 {
-    color: #1877f2;
+    color: #02285ad2;
     font-size: 4rem;
     margin-bottom: 10px;
   }
@@ -128,7 +145,7 @@
   }
   form input:focus {
     outline: none;
-    border-color: #1877f2;
+    border-color: #02285ad2;
   }
   ::placeholder {
     color: #777;
@@ -144,7 +161,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background: #1877f2;
+    background: #02285ad2;
     padding: 15px 0;
     border-radius: 6px;
     color: #fff;
@@ -159,7 +176,7 @@
     text-decoration: none;
   }
   .link .forgot {
-    color: #1877f2;
+    color: #02285ad2;
     font-size: 0.875rem;
   }
   .link .forgot:hover {
@@ -179,7 +196,7 @@
   }
   .button a {
     padding: 15px 20px;
-    background: #42b72a;
+    background: #FFFFFF;
     border-radius: 6px;
     color: #fff;
     font-size: 1.063rem;
@@ -187,7 +204,7 @@
     transition: 0.2s ease;
   }
   .button a:hover {
-    background: #3ba626;
+    background: #ffffff;
   }
   @media (max-width: 900px) {
     .facebook-page {
