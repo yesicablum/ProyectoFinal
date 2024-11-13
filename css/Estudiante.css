@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0b208;
+    color: #fff;
+  
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  
+  .nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  .services-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    flex-grow: 1;
+  }
+  
+  .services-container h2 {
+    font-size: 2.5em; /* Incrementa el tamaño del título */
+    color: #333;
+    margin-bottom: 50px; /* Añade espacio entre el título y los botones */
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .service-button {
+    background: #333;
+    color: #fff;
+    padding: 40px; /* Incrementa el padding para hacer el botón más grande */
+    border-radius: 8px;
+    text-align: center;
+    transition: background 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .service-button i {
+    font-size: 40px; /* Incrementa el tamaño del ícono */
+    margin-bottom: 15px; /* Aumenta el espacio debajo del ícono */
+    display: block;
+    color: #e3e1e1;
+  }
+  
+  .service-title {
+    font-size: 1.5em; /* Incrementa el tamaño del título */
+    font-weight: bold;
+  }
+  .service-button:hover {
+    background: #ffa500;
+  }
+  
+  .service-icon {
+    font-size: 30px; /* Tamaño del ícono */
+    margin-bottom: 10px; /* Espacio debajo del ícono */
+  }
+  
+  
+  
+  .service-description {
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f0b208;
+    color: #fff;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Configuración para tres botones: dos arriba, uno abajo centrado */
+  .services-grid {
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    grid-template-rows: auto auto; /* Dos filas */
+    gap: 20px;
+  }
+  
+ 
