@@ -89,20 +89,20 @@
     justify-content: center;
     background: #f0f2f5;
   }
-  .facebook-page {
+  .page {
     justify-content: space-between;
     max-width: 1000px;
     width: 100%;
   }
-  .facebook-page .text {
+  .page .text {
     margin-bottom: 90px;
   }
-  .facebook-page h1 {
+  .page h1 {
     color: #1877f2;
     font-size: 4rem;
     margin-bottom: 10px;
   }
-  .facebook-page p {
+  .page p {
     font-size: 1.75rem;
     white-space: nowrap;
   }
