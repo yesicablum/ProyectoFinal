@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de actividades</title>
+    <link rel="stylesheet" href="../css/Registro_actividades.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+          <a href="#Inicio">Inicio</a>
+          <a href="#contacto">Contáctanos</a>
+          <a href="#nosotros">Nosotros</a>
+        </nav>
+      </header>
+   
+    <h1>Registro de Actividades</h1>
+
+    <div class="form-container">
+        <h2>Registrar Nueva Actividad</h2>
+        <form id="actividadForm">
+            <input type="text" id="titulo" placeholder="Título de la actividad" required>
+            <textarea id="descripcion" placeholder="Descripción de la actividad" required></textarea>
+            <input type="date" id="fecha" required>
+            <button type="button" onclick="registrarActividad()">Registrar Actividad</button>
+        </form>
+    </div>
+
+
+    <h1> Actividades Registradas</h1>
+    <div class="actividades-container">
+        <div class="actividad">
+            <h2>Examen de Matemáticas</h2>
+            <p>Descripción: Examen parcial de trigonometría y cálculo.</p>
+            <p>Fecha: 15 de junio de 2024</p>
+        </div>
+        <div class="actividad">
+            <h2>Práctica de Física</h2>
+            <p>Descripción: Resolución de problemas sobre dinámica.</p>
+            <p>Fecha: 18 de junio de 2024</p>
+        </div>
+        <div class="actividad">
+            <h2>Proyecto de Programación</h2>
+            <p>Descripción: Desarrollo de una aplicación en Python.</p>
+            <p>Fecha: 25 de junio de 2024</p>
+        </div>
+        <div class="actividad">
+            <h2>Ensayo de Historia del Arte</h2>
+            <p>Descripción: Análisis comparativo de dos obras renacentistas.</p>
+            <p>Fecha: 30 de junio de 2024</p>
+        </div>
+    </div>
+
+    <!-- <script>
+        function registrarActividad() {
+            const titulo = document.getElementById('titulo').value;
+            const descripcion = document.getElementById('descripcion').value;
+            const fecha = document.getElementById('fecha').value;
+
+            if (titulo && descripcion && fecha) {
+                const nuevaActividad = document.createElement('div');
+                nuevaActividad.classList.add('actividad');
+                nuevaActividad.innerHTML = `
+                    <h2>${titulo}</h2>
+                    <p>Descripción: ${descripcion}</p>
+                    <p>Fecha: ${fecha}</p>
+                `;
+                document.getElementById('actividadesContainer').appendChild(nuevaActividad);
+
+                // Limpiar formulario
+                document.getElementById('actividadForm').reset();
+            } else {
+                alert('Por favor, complete todos los campos.');
+            }
+        }
+    </script> -->
+</body>
+</html>
