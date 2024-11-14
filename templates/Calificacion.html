@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificacion y Retroalimentacion</title>
+    <link rel="stylesheet" href="../css/Calificacion.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+          <a href="#Inicio">Inicio</a>
+          <a href="#contacto">Contáctanos</a>
+          <a href="#nosotros">Nosotros</a>
+        </nav>
+      </header>
+
+    <h1>Calificación y Retroalimentación</h1>
+
+    <div class="form-container">
+        <h2>Registrar Calificación y Retroalimentación</h2>
+        <form id="calificacionForm">
+            <input type="text" id="nombreEstudiante" placeholder="Nombre del estudiante" required>
+            <select id="actividadSeleccionada" required>
+                <option value="" disabled selected>Seleccione la actividad</option>
+                <option value="Examen de Matemáticas">Examen de Matemáticas</option>
+                <option value="Práctica de Física">Práctica de Física</option>
+                <option value="Proyecto de Programación">Proyecto de Programación</option>
+                <option value="Ensayo de Historia del Arte">Ensayo de Historia del Arte</option>
+            </select>
+            <input type="number" id="calificacion" placeholder="Calificación (0-100)" required>
+            <textarea id="retroalimentacion" placeholder="Retroalimentación" required></textarea>
+            <button type="button" onclick="registrarCalificacion()">Registrar Calificación</button>
+        </form>
+    </div>
+
+    <div class="actividades-container" id="actividadesCalificadasContainer">
+        <div class="actividad">
+            <h2>Examen de Matemáticas</h2>
+            <p><strong>Estudiante:</strong> Juan Pérez</p>
+            <p><strong>Calificación:</strong> 85</p>
+            <p><strong>Retroalimentación:</strong> Buen trabajo, pero revisa las fórmulas de trigonometría.</p>
+        </div>
+        <div class="actividad">
+            <h2>Práctica de Física</h2>
+            <p><strong>Estudiante:</strong> Ana Martínez</p>
+            <p><strong>Calificación:</strong> 92</p>
+            <p><strong>Retroalimentación:</strong> Excelente resolución de problemas y claridad en los pasos.</p>
+        </div>
+        <div class="actividad">
+            <h2>Proyecto de Programación</h2>
+            <p><strong>Estudiante:</strong> Carlos López</p>
+            <p><strong>Calificación:</strong> 78</p>
+            <p><strong>Retroalimentación:</strong> Buen esfuerzo, pero considera mejorar la optimización del código.</p>
+        </div>
+    </div>
+</body>
+</html>
