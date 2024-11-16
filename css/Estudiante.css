@@ -50,9 +50,9 @@
   }
   
   .services-container h2 {
-    font-size: 2.5em; /* Incrementa el tamaño del título */
+    font-size: 2.5em;
     color: #333;
-    margin-bottom: 50px; /* Añade espacio entre el título y los botones */
+    margin-bottom: 50px;
   }
   
   .services-grid {
@@ -64,7 +64,7 @@
   .service-button {
     background: #333;
     color: #fff;
-    padding: 40px; /* Incrementa el padding para hacer el botón más grande */
+    padding: 40px;
     border-radius: 8px;
     text-align: center;
     transition: background 0.3s;
@@ -73,14 +73,14 @@
   }
   
   .service-button i {
-    font-size: 40px; /* Incrementa el tamaño del ícono */
-    margin-bottom: 15px; /* Aumenta el espacio debajo del ícono */
+    font-size: 40px;
+    margin-bottom: 15px;
     display: block;
     color: #e3e1e1;
   }
   
   .service-title {
-    font-size: 1.5em; /* Incrementa el tamaño del título */
+    font-size: 1.5em;
     font-weight: bold;
   }
   .service-button:hover {
@@ -88,8 +88,8 @@
   }
   
   .service-icon {
-    font-size: 30px; /* Tamaño del ícono */
-    margin-bottom: 10px; /* Espacio debajo del ícono */
+    font-size: 30px;
+    margin-bottom: 10px;
   }
   
   
@@ -118,8 +118,8 @@
   
   /* Configuración para tres botones: dos arriba, uno abajo centrado */
   .services-grid {
-    grid-template-columns: 1fr 1fr; /* Dos columnas */
-    grid-template-rows: auto auto; /* Dos filas */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 20px;
   }
   
