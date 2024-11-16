@@ -15,6 +15,81 @@
           <a href="#nosotros">Nosotros</a>
         </nav>
       </header>
+
+      <h1>Asignar Materias a Profesores</h1>
+  
+      <div class="container">
+  <div class="profesor">
+    <p class="nombre-profesor">Profesor 1</p>
+    <select class="selector-materias" onchange="asignarMateria(this, 'materias-profesor-1')">
+      <option value="" disabled selected>Selecciona una materia</option>
+      <option value="Matemáticas">Matemáticas</option>
+      <option value="Historia">Historia</option>
+      <option value="Biología">Biología</option>
+      <option value="Química">Química</option>
+    </select>
+    <ul class="materias" id="materias-profesor-1"></ul>
+  </div>
+  
+  <div class="profesor">
+    <p class="nombre-profesor">Profesor 2</p>
+    <select class="selector-materias" onchange="asignarMateria(this, 'materias-profesor-2')">
+      <option value="" disabled selected>Selecciona una materia</option>
+      <option value="Matemáticas">Matemáticas</option>
+      <option value="Historia">Historia</option>
+      <option value="Biología">Biología</option>
+      <option value="Química">Química</option>
+    </select>
+    <ul class="materias" id="materias-profesor-2"></ul>
+  </div>
+
+  <div class="profesor">
+    <p class="nombre-profesor">Profesor 3</p>
+    <select class="selector-materias" onchange="asignarMateria(this, 'materias-profesor-2')">
+      <option value="" disabled selected>Selecciona una materia</option>
+      <option value="Matemáticas">Matemáticas</option>
+      <option value="Historia">Historia</option>
+      <option value="Biología">Biología</option>
+      <option value="Química">Química</option>
+    </select>
+    <ul class="materias" id="materias-profesor-2"></ul>
+  </div>
+
+  <div class="profesor">
+    <p class="nombre-profesor">Profesor 4</p>
+    <select class="selector-materias" onchange="asignarMateria(this, 'materias-profesor-2')">
+      <option value="" disabled selected>Selecciona una materia</option>
+      <option value="Matemáticas">Matemáticas</option>
+      <option value="Historia">Historia</option>
+      <option value="Biología">Biología</option>
+      <option value="Química">Química</option>
+    </select>
+    <ul class="materias" id="materias-profesor-2"></ul>
+  </div>
+      </div>
+
+  <script>
+    function asignarMateria(select, listaId) {
+      const materia = select.value;
+      const lista = document.getElementById(listaId);
+
+      // Verificar si la materia ya está en la lista
+      const items = lista.querySelectorAll('li');
+      for (const item of items) {
+        if (item.textContent === materia) {
+          alert('Esta materia ya está asignada.');
+          return;
+        }
+      }
+
+      // Crear un nuevo elemento de lista
+      const nuevoItem = document.createElement('li');
+      nuevoItem.textContent = materia;
+
+      // Agregar el nuevo elemento a la lista
+      lista.appendChild(nuevoItem);
+    }
+  </script>
     
 </body>
 </html>
